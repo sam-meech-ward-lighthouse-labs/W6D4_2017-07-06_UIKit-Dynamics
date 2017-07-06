@@ -12,6 +12,8 @@
 		22FD73651F0E997F0018B890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FD73631F0E997F0018B890 /* Main.storyboard */; };
 		22FD73671F0E997F0018B890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FD73661F0E997F0018B890 /* Assets.xcassets */; };
 		22FD736A1F0E997F0018B890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FD73681F0E997F0018B890 /* LaunchScreen.storyboard */; };
+		22FD73901F0EA5010018B890 /* ConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD738F1F0EA5010018B890 /* ConstraintsViewController.swift */; };
+		22FD73921F0ED5190018B890 /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FD73911F0ED5190018B890 /* TransformViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		22FD73661F0E997F0018B890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FD73691F0E997F0018B890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22FD736B1F0E997F0018B890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FD738F1F0EA5010018B890 /* ConstraintsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsViewController.swift; sourceTree = "<group>"; };
+		22FD73911F0ED5190018B890 /* TransformViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				22FD735F1F0E997F0018B890 /* AppDelegate.swift */,
 				22FD73611F0E997F0018B890 /* ViewController.swift */,
+				22FD738F1F0EA5010018B890 /* ConstraintsViewController.swift */,
+				22FD73911F0ED5190018B890 /* TransformViewController.swift */,
 				22FD73631F0E997F0018B890 /* Main.storyboard */,
 				22FD73661F0E997F0018B890 /* Assets.xcassets */,
 				22FD73681F0E997F0018B890 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FD73621F0E997F0018B890 /* ViewController.swift in Sources */,
+				22FD73901F0EA5010018B890 /* ConstraintsViewController.swift in Sources */,
 				22FD73601F0E997F0018B890 /* AppDelegate.swift in Sources */,
+				22FD73921F0ED5190018B890 /* TransformViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				22FD73701F0E997F0018B890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

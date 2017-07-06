@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BZB-nw-H5e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV6-ke-dHc">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zP0-K5-92b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EV6-ke-dHc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q2Z-Kt-Heb"/>
+                            <constraint firstItem="EV6-ke-dHc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="or3-KF-rxh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Constraints View Controller-->
+        <scene sceneID="4hD-Sl-CY2">
+            <objects>
+                <viewController id="BZB-nw-H5e" customClass="ConstraintsViewController" customModule="DynamicsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OvD-P6-kDt"/>
+                        <viewControllerLayoutGuide type="bottom" id="08o-Kp-eDP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VV9-nH-UZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mf3-NF-i7I">
+                                <rect key="frame" x="87.5" y="293" width="200" height="300"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="H3L-SU-idq"/>
+                                    <constraint firstAttribute="width" constant="200" id="XEj-lY-1xd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ay5-Jc-UIW">
+                                <rect key="frame" x="87.5" y="71" width="200" height="300"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="TlG-MH-KAz"/>
+                                    <constraint firstAttribute="width" constant="200" id="nKG-uK-TyT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="08o-Kp-eDP" firstAttribute="top" secondItem="mf3-NF-i7I" secondAttribute="bottom" constant="74" id="F7A-Tv-X3p"/>
+                            <constraint firstItem="Ay5-Jc-UIW" firstAttribute="centerX" secondItem="VV9-nH-UZ1" secondAttribute="centerX" id="KzT-re-gJz"/>
+                            <constraint firstItem="Ay5-Jc-UIW" firstAttribute="leading" secondItem="VV9-nH-UZ1" secondAttribute="leading" id="Lvp-eo-wpt"/>
+                            <constraint firstAttribute="trailing" secondItem="mf3-NF-i7I" secondAttribute="trailing" id="ZVz-K4-lDK"/>
+                            <constraint firstItem="mf3-NF-i7I" firstAttribute="centerX" secondItem="VV9-nH-UZ1" secondAttribute="centerX" id="hlS-0K-DzY"/>
+                            <constraint firstItem="Ay5-Jc-UIW" firstAttribute="top" secondItem="OvD-P6-kDt" secondAttribute="bottom" constant="51" id="q4T-V2-6UD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Lvp-eo-wpt"/>
+                                <exclude reference="ZVz-K4-lDK"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="y7X-d7-LOR" appends="YES" id="1sz-Qu-2lD"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="mf3-NF-i7I" id="PTq-9Y-ORX"/>
+                        <outlet property="bottomViewCenterConstraint" destination="hlS-0K-DzY" id="GdE-sM-AnA"/>
+                        <outlet property="bottomViewRightConstraint" destination="ZVz-K4-lDK" id="Uf6-Qn-ise"/>
+                        <outlet property="topViewCenterConstraint" destination="KzT-re-gJz" id="sXj-Ye-lDl"/>
+                        <outlet property="topViewLeftConstraint" destination="Lvp-eo-wpt" id="P7w-MJ-5sB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rr5-IY-rDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="y7X-d7-LOR">
+                    <connections>
+                        <action selector="doubleTap:" destination="BZB-nw-H5e" id="FLK-JV-92W"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="929" y="-261"/>
         </scene>
     </scenes>
 </document>
